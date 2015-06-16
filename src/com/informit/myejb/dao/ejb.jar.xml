@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar>
+<enterprise-beans>
+<entity>
+<description>Sample Bean</description>
+<ejb-name>SampleBean</ejb-name>
+<home>com.informit.myejb.ejb.SampleHome</home>
+<remote>com.informit.myejb.ejb.Sample</remote>
+<ejb-class>com.informit.myejb.ejb.SampleEJB</ejb-class>
+<persistence-type>Bean</persistence-type>
+<prim-key-class>com.informit.myejb.ejb.SamplePk</prim-key-class>
+<reentrant>False</reentrant>
+<env-entry>
+	<env-entry-name>SAMPLEFAO.Impl</env-entry-name>
+	<env-entry-type>java.lang.String</env-entry-type>
+	<env-entry-value>com.informit.myejb.dao.SampleDAOJDBCImpl</env-entry-value>
+</env-entry>
+</entity>
+</enterprise-beans>
+</ejb-jar>
